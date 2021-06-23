@@ -1,0 +1,226 @@
+/*-----CSS змінні------*/
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+}
+
+/*-----Скидування стилів------*/
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+
+/*-------------Body--------------*/
+body {
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+  font-family: var(--main-font);
+  font-weight: normal;
+}
+
+/*-----Шапка сайту------*/
+
+/*--Логотип сайту(Шапка сайту)--*/
+.logo,
+.footer-logo {
+  font-family: var(--secondary-font);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+
+  color: #000000;
+}
+
+.logo .logo-item,
+.footer-logo .logo-item {
+  color: var(--accent-color);
+}
+
+/*-- Навігаційні посилання(Шапка сайту) */
+
+.menu .menu-ref,
+.contacts .contacts-ref {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+
+  color: var(--primary-text-color);
+}
+
+.menu .menu-ref:hover,
+.menu .menu-ref:focus,
+.contacts .contacts-ref:hover,
+.contacts .contacts-ref:focus {
+  color: var(--accent-color);
+}
+
+.menu .menu-ref.current {
+  color: var(--accent-color);
+}
+
+.contacts .contacts-ref {
+  color: var(--secondary-text-color);
+}
+
+/*-- Унікальний контент сторінки --*/
+/*-- Головна секція сайту --*/
+.hero {
+  background: #2f303a;
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--primary-white-color);
+}
+
+.btn {
+  background: var(--accent-color);
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+
+  color: var(--primary-white-color);
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #188ce8;
+}
+
+/*-- Секція"Особенности" --*/
+.features-list .features-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.features-list .features-item {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/*-- Секція"Чем мы занимаемся" --*/
+.represent-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/*--Наша команда--*/
+.team-title,
+.profection {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.profection {
+  font-weight: inherit;
+  color: var(--secondary-text-color);
+}
+
+/*------------Підвал------------*/
+.footer {
+  background-color: #2f303a;
+}
+
+/*-- Логотип сайту --*/
+
+.footer-logo {
+  color: var(--primary-white-color);
+}
+
+/*-------- Контакти --------*/
+.footer-list .footer-ref {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-list .look {
+  color: var(--primary-white-color);
+}
+
+.footer-list .footer-ref:hover,
+.footer-list .footer-ref:focus {
+  color: var(--accent-color);
+}
+
+/*-------- Кінець головної сторінки сайту--------*/
+
+/*-------- Початок сторінки сайту "Портфоліо"--------*/
+/*--- Унікальний контент сторінки----*/
+/*--- Секція порфоліо---*/
+/*-- Список фільтрів --*/
+.btn-filter {
+  background: #f5f4fa;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+
+  color: var(--primary-text-color);
+}
+
+.btn-filter:hover,
+.btn-filter:focus {
+  background-color: var(--accent-color);
+}
+
+.btn-filter.select {
+  background: var(--accent-color);
+
+  color: var(--primary-white-color);
+}
+
+/*-- Список карток --*/
+.card-ref .cards-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+  color: var(--primary-text-color);
+}
+
+.card-ref .filter {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+
+  color: #757575;
+}
+
+/*-------- Кынець сторінки сайту "Портфоліо"--------*/
