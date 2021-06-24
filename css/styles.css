@@ -54,6 +54,11 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+/*-Обмеження контенту секцій-*/
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 /*-----Шапка сайту------*/
 
@@ -138,6 +143,9 @@ body {
 }
 
 .hero-title {
+  padding-top: 200px;
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -167,7 +175,22 @@ body {
 }
 
 /*-- Секція"Особенности" --*/
-.features-list .features-title {
+.hidden-title {
+  display: none;
+}
+.features-list {
+  display: flex;
+}
+.features-items:not(:last-child) {
+  margin-right: 30px;
+}
+.features-items {
+  width: calc((100% - 90px) / 4);
+}
+
+.features-items .features-title {
+  margin-bottom: 10px;
+
   font-weight: bold;
   font-size: 14px;
   line-height: 1.15;
@@ -175,7 +198,9 @@ body {
   text-transform: uppercase;
 }
 
-.features-list .features-item {
+.features-items .features-item {
+  padding-top: 3px;
+  padding-bottom: 3px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
