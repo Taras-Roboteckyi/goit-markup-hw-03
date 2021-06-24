@@ -16,15 +16,26 @@
   text-decoration: none;
 }
 
-h1,h2,h3,h4,h5,h6,p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin-top: 0;
   margin-bottom: 0;
 }
 
-ul,ol {
+ul,
+ol {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
+}
+
+img {
+  display: block;
 }
 
 /*-------------Body--------------*/
@@ -35,9 +46,48 @@ body {
   font-weight: normal;
 }
 
+/*-Контейнер для обмеження контенту по ширині-*/
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /*-----Шапка сайту------*/
 
+.header-container {
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #ececec;
+}
 /*--Логотип сайту(Шапка сайту)--*/
+
+.navigation,
+.menu,
+.contacts {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 93px;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contacts {
+  margin-left: auto;
+}
+
+.item {
+  margin-right: 50px;
+}
+
 .logo,
 .footer-logo {
   font-family: var(--secondary-font);
