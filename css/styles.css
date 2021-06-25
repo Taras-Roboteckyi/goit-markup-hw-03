@@ -243,7 +243,30 @@ body {
   justify-content: space-between;
 }
 
-/*--Наша команда--*/
+/*--Секція"Наша команда"--*/
+
+.team-list {
+  display: flex;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.team-item {
+  margin-left: 30px;
+  margin-top: 30px;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-img {
+  margin-bottom: 30px;
+  border-radius: 4px 4px 0px 0px;
+}
+.team-title {
+  margin-bottom: 10px;
+}
+
 .team-title,
 .profection {
   font-weight: 500;
@@ -254,6 +277,8 @@ body {
 }
 
 .profection {
+  padding-bottom: 30px;
+
   font-weight: inherit;
   color: var(--secondary-text-color);
 }
